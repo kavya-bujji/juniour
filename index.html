@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./query.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <header>
+        <div class="heading">
+          <h1 class="large">Social Media Dashboard</h1>
+          <small>Total Followers: 23,004</small>
+        </div>
+        <div class="toggle">
+          <span id="mode" class="mode">Dark Mode</span>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round" id="toggle"></span>
+          </label>
+        </div>
+      </header>
+  
+      <section class="main-container">
+        <div id="main-box" class="main-box facebook ">
+          <small class="username"
+            ><img src="./icon-facebook.svg" alt=""/>@Farouk_k</small
+          >
+          <h2 class="followers">1200</h2>
+          <p class="follower-text">Followers</p>
+          <br />
+          <p class="stats gain">
+            <img src="./icon-up.svg" alt=""/>12 Today
+          </p>
+        </div>
+        <div id="main-box" class="main-box twitter ">
+          <small class="username"
+            ><img src="./icon-twitter.svg" alt=""/>@Farouk_k</small
+          >
+          <h2 class="followers">1044</h2>
+          <p class="follower-text">Followers</p>
+          <br />
+          <p class="stats gain">
+            <img src="./icon-up.svg" alt="" />99 Today
+          </p>
+        </div>
+        <div id="main-box" class="main-box instagram ">
+          <small class="username"
+            ><img src="./icon-instagram.svg" alt="" />@Farouk_k</small
+          >
+          <h2 class="followers">11K</h2>
+          <p class="follower-text">Followers</p>
+          <br />
+          <p class="stats gain">
+            <img src="./icon-up.svg" alt="" />1099 Today
+          </p>
+        </div>
+        <div id="main-box" class="main-box youtube ">
+          <small class="username"
+            ><img src="./icon-youtube.svg" alt="" />@Farouk_k</small
+          >
+          <h2 class="followers">100k</h2>
+          <p class="follower-text">Subscribers</p>
+          <br />
+          <p class="stats loss">
+            <img src="./icon-down.svg" alt="" />144 Today
+          </p>
+        </div>
+      </section>
+  
+      <section class="overview">
+        <h1 class="large">Overview - Today</h1>
+  
+        <div class="overview-container">
+          <div id="overview-box" class="overview-box ">
+            <div class="flex first">
+              <p>Pages Views</p>
+              <img src="./icon-facebook.svg" alt="" />
+            </div>
+            <div class="flex second">
+              <h2>87</h2>
+              <p class="gain"><img src="./icon-up.svg" alt="" /> 3%</p>
+            </div>
+          </div>
+          <div id="overview-box" class="overview-box">
+            <div class="flex first">
+              <p>Likes</p>
+              <img src="./icon-facebook.svg" alt="" />
+            </div>
+            <div class="flex second">
+              <h2>52</h2>
+              <p class="gain"><img src="./icon-up.svg" alt="" /> 2%</p>
+            </div>
+          </div>
+          <div id="overview-box" class="overview-box">
+            <div class="flex first">
+              <p>Likes</p>
+              <img src="./icon-instagram.svg" alt="" />
+            </div>
+            <div class="flex second">
+              <h2>500</h2>
+              <p class="gain"><img src="./icon-up.svg" alt="" /> 20%</p>
+            </div>
+          </div>
+          <div id="overview-box" class="overview-box">
+            <div class="flex first">
+              <p>Profile visits</p>
+              <img src="./icon-instagram.svg" alt="" />
+            </div>
+            <div class="flex second">
+              <h2>500</h2>
+              <p class="loss"><img src="./icon-down.svg" alt="" /> 50%</p>
+            </div>
+          </div>
+          <div id="overview-box" class="overview-box">
+            <div class="flex first">
+              <p>Likess</p>
+              <img src="./icon-twitter.svg" alt="" />
+            </div>
+            <div class="flex second">
+              <h2>8k</h2>
+              <p class="gain"> <img src="./icon-up.svg" alt="" /> 73%</p>
+            </div>
+          </div>
+          <div id="overview-box" class="overview-box">
+            <div class="flex first">
+              <p>Retweets</p>
+              <img src="./icon-twitter.svg" alt="" />
+            </div>
+            <div class="flex second">
+              <h2>5200</h2>
+              <p class="loss"><img src="./icon-down.svg" alt="" /> 30%</p>
+            </div>
+          </div>
+          <div id="overview-box" class="overview-box">
+            <div class="flex first">
+              <p>Likes</p>
+              <img src="./icon-youtube.svg" alt="" />
+            </div>
+            <div class="flex second">
+              <h2>10k</h2>
+              <p class="gain"><img src="./icon-up.svg" alt="" /> 23%</p>
+            </div>
+          </div>
+          <div id="overview-box" class="overview-box">
+            <div class="flex first">
+              <p>Total Views</p>
+              <img src="./icon-youtube.svg" alt="" />
+            </div>
+            <div class="flex second">
+              <h2>50K</h2>
+              <p class="loss"><img src="./icon-down.svg" alt="" /> 63%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+     
+    </div>
+    
+    
+    <script src="./script.js"></script>
+  </body>
+</html>

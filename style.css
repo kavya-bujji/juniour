@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box  ;
+}
+
+body{
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+  background: linear-gradient(to bottom, hsl(232, 19%, 15%) 0%, hsl(232, 19%, 15%) 30%, hsl(230, 17%, 14%) 30%, hsl(230, 17%, 14%) 100%);
+    
+}
+
+.container.show{
+  background: linear-gradient(to bottom, hsl(225, 100%, 98%) 0%, hsl(225, 100%, 98%) 30%, hsl(0, 0%, 100%) 30%, hsl(0, 0%, 100%)) 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px 90px;
+  margin-bottom: 30px;
+}
+
+.heading h1{
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.heading small{
+  margin: 0;
+  color: hsl(228, 34%, 66%);
+}
+
+.toggle span{
+  text-align:center;
+  vertical-align: middle;
+  font-size: 110%;
+  margin-right: 10px;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: hsl(232, 19%, 15%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+    -moz-transform: translateX(16px);
+    -o-transform: translateX(16px);
+    background-color:#fff ;
+}
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /*Main Boxes*/
+  .main-container{
+    padding: 20px 90px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .main-box{
+    background-color: hsl(228, 28%, 20%);
+    padding:20px 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 120%;
+    text-align:center ;
+    width: 250px;
+}
+
+.main-box:hover,
+.overview-box:hover{
+  background-color: hsl(229, 29%, 26%);
+}
+
+
+
+.facebook{
+  border-top: 3px solid hsl(208, 92%, 53%);
+}
+.twitter{
+  border-top: 3px solid hsl(203, 89%, 53%);
+}
+
+.instagram{
+  border-top: 3px solid hsl(37, 97%, 70%) ;
+}
+
+.youtube{
+  border-top: 3px solid hsl(348, 97%, 39%);
+}
+
+.username img{
+  margin-right: 10px;
+}
+.username{
+  vertical-align: center;
+  color: hsl(228, 34%, 66%);
+}
+
+.followers{
+  font-size:300%;
+  margin-bottom: 5px;
+}
+
+.follower-text{
+  color: hsl(228, 34%, 66%);
+  letter-spacing: 5px;
+ text-transform:uppercase ;
+ 
+}
+.stats img{
+  margin-right: 5px;
+}
+
+.stats{
+  margin-top: 10px;
+  
+  font-size: 90%;
+}
+
+.gain{
+  color: hsl(163, 72%, 41%);
+}
+
+.loss{
+ color: hsl(356, 69%, 56%);
+}
+
+.overview{
+  padding: 20px 90px;
+}
+
+
+.overview h1{
+  font-size: 200%;
+}
+
+
+
+.overview-container{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr ;
+  grid-gap: 20px;
+}
+
+
+
+.overview-box{
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 5px;
+  padding: 25px;
+  padding-bottom: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.first p{
+  font-size: 110%;
+  color: hsl(228, 34%, 66%);
+}
+
+.first img{
+  width: 30px;
+  height: 30px;
+}
+
+.second h2{
+  font-size: 180%;
+  vertical-align: bottom;
+}
+
+.second p{
+  font-size: 120%;
+  vertical-align: bottom;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    /*Whute Background*/
+    .main-box.show,
+    .overview-box.show{
+      background-color: hsl(227, 47%, 96%); 
+    }
+
+    .main-box.show:hover,
+    .overview-box.show:hover{
+      background-color: hsl(230, 22%, 74%); 
+    }
+    .main-box.show .username,
+    .main-box.show .followers,
+    .overview-box.show .second h2,
+    .mode.show,
+    .large.show{
+      color: hsl(230, 17%, 14%);
+    }
+
+    .main-box.show .follower-text,
+    .overview-box.show .first p{
+      color:hsl(228, 12%, 44%) ;
+    }
+   
